@@ -1,18 +1,35 @@
 *{
    margin: 0px;
    padding: 0px;
-   /* border: 1px solid lightblue; */
-   font-family: 'Inter, sans-serif';
-   filter: grayscale(100%);
+   /* border: 1px solid #8FBDD3; */
+   font-family: "eurostile", sans-serif;
+   /* filter: grayscale(100%); */
    list-style: none;
 }
 
 body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fbfbfb;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+h1{
+  font-size: 2.5rem;
+  text-align: center;
+}
+h2{
+  font-size: 2rem;
+}
+h3{
+  font-size: 1.75;
+}
+h4{
+  font-size: 1.5;
 }
 p{
   color: #666;
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+}
+button{
+  font-size: 1rem;
 }

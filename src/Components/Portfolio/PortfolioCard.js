@@ -1,45 +1,51 @@
 import React from 'react';
 import styled from 'styled-components';
-import { secondaryBgColor } from '../Style';
+import {
+  darkPrimary,
+  lightPrimry,
+  myWhite,
+  secondary,
+  secondaryBgColor,
+  StdLink,
+} from '../Style';
 
 function PortfolioCard(props) {
-  const { title, body, image } = props;
+  const { title, desc, webLink } = props;
   return (
     <>
       <StdCard>
-        <li>
-          <h3>{title}</h3>
-          <p>{body}</p>
-        </li>
-        <li>
-          <img src={image} alt={title} />
-        </li>
+        <section>
+          <span>{title}</span>
+          <p>{desc}</p>
+          <StdLink to={''}> {webLink}</StdLink>
+        </section>
       </StdCard>
     </>
   );
 }
-const StdCard = styled.ul`
-  width: 100%;
-  position: relative;
-  height: 100%;
-  li {
-    width: 50%;
-    margin: 20px 0px 0px 10px;
-    border-radius: 12px;
-    overflow: hidden;
-    flex-grow: 1;
+const StdCard = styled.li`
+  box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+  background-color: ${myWhite};
+  width: 47%;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 9/6;
+  border: 1px solid ${secondary};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  :hover {
+    border: 1px solid ${darkPrimary};
   }
-  li:nth-child(2) {
-    width: 500px;
-    flex-grow: 2;
-    left: 100px;
-    position: absolute;
-    border: 1px solid ${secondaryBgColor};
-    background-color: #DCDCDC;
-  }
-  img {
-    width: 90%;
-    margin: 10px;
+  > section {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70%;
   }
 `;
 

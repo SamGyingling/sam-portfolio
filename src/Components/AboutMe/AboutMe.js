@@ -58,7 +58,6 @@ const StdSection = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    list-style: none;
     > li {
       margin-bottom: 12px;
     }

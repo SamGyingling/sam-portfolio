@@ -6,6 +6,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { faComment } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
+import { primary, darkPrimary, lightPrimry, myWhite } from '../Style';
 
 function Nav() {
   return (
@@ -27,17 +28,19 @@ function Nav() {
 }
 
 const StdNav = styled.section`
+  margin: auto;
+  
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   list-style: none;
   max-width: 500px;
   position: sticky;
-  bottom: 45px;
-  background-color: #fff;
+  bottom:20px;
+  background-color: ${myWhite};
   border-radius: 12px;
   padding: 11px 0px 11px 12px;
-  border: 1px solid #f4f4f4;
+  border: 1px solid ${primary};
   box-shadow: 0 4px 16px 0 rgb(0 0 0 / 2%);
   z-index: 10;
   .link {
@@ -48,11 +51,19 @@ const StdNav = styled.section`
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-    background-color: #f4f4f4;
+    background-color: ${primary};
     .icon {
-      color: #8d8d8d;
-      background-color: #f4f4f4;
+      color: ${myWhite};
+      background-color: ${primary};
     }
+    :hover{
+      background-color: ${myWhite};
+      .icon {
+      color: ${primary};
+      background-color: ${myWhite};
+    }
+    }
+   
   }
 `;
 

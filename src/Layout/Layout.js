@@ -12,10 +12,10 @@ function Layout() {
   );
 }
 const StdLayout = styled.section`
-  max-width: 800px;
+  max-width: 800px; 
+  width: 100%;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 `;
 export default Layout;
