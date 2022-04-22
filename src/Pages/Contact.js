@@ -1,8 +1,11 @@
 import React from 'react'
+import { StdPageEl } from '../Components/Style'
 
 function Contact() {
   return (
-    <div>Contact</div>
+    <StdPageEl>
+    <h1>coming soon</h1>
+  </StdPageEl>
   )
 }
 

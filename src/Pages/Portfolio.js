@@ -1,9 +1,18 @@
-import React from 'react'
+import React from 'react';
+import Proeats from '../Components/Proeats/Proeats';
+import { StdPageEl } from '../Components/Style';
 
 function Portfolio() {
   return (
-    <div>Portfolio</div>
-  )
+    <>
+      <StdPageEl>
+        <h2>My Projets</h2>
+      </StdPageEl>
+      <StdPageEl>
+        <Proeats />
+      </StdPageEl>
+    </>
+  );
 }
 
-export default Portfolio
+export default Portfolio;

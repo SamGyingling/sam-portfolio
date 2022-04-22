@@ -1,11 +1,16 @@
 import React from 'react';
+import styled from 'styled-components';
 
 function Proeats() {
   return (
-    <iframe src="https://proeats.com.au/" width="1000px" height="700px">
-      <p>Your browser does not support iframes.</p>
-    </iframe>
+    <StdSection>
+      <iframe title='proeats' src="https://www.proeats.com.au/" width='100%' height="100%">
+        <p>Your browser does not support iframes.</p>
+      </iframe>
+    </StdSection>
   );
 }
-
+const StdSection = styled.div`
+  resize: both;
+`
 export default Proeats;
