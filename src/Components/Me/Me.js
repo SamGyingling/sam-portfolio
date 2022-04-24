@@ -3,10 +3,11 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShare } from '@fortawesome/free-solid-svg-icons';
 import { ButtondPrime, StdLink } from '../Style';
+import Scene from '../3D/Scene';
 
-function Header() {
+function Me() {
   return (
-    <StdHeader>
+    <StdMe>
       <h1> Hello, I am Sam. A Full-Stack Developer.</h1>
       <img src="62550592.png" alt="profile pic"></img>
       <section>
@@ -18,11 +19,11 @@ function Header() {
           Contact me
         </ButtondPrime>
       </section>
-    </StdHeader>
+    </StdMe>
   );
 }
 
-const StdHeader = styled.header`
+const StdMe = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -54,4 +55,4 @@ const StdHeader = styled.header`
     }
   }
 `;
-export default Header;
+export default Me;

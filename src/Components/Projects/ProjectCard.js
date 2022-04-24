@@ -1,23 +1,30 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import {
+  borderPrime,
+  ButtondPrime,
   darkPrimary,
   lightPrimry,
   myWhite,
   secondary,
   secondaryBgColor,
+  StdA,
+  StdATag,
   StdLink,
 } from '../Style';
 
-function PortfolioCard(props) {
+function ProjectCard(props) {
   const { title, desc, webLink } = props;
+  const navigate = useNavigate();
   return (
     <>
-      <StdCard>
-        <section>
+      <StdCard className='flex-col'>
+        <section className='flex-col'>
           <span>{title}</span>
           <p>{desc}</p>
-          <StdLink to={''}> {webLink}</StdLink>
+          <StdATag href={webLink} target={'_blank'}>Learn More</StdATag>
+          {/* <StdA href={webLink} target={'_blank'} rel="noreferrer"><span>Learn More</span></StdA> */}
         </section>
       </StdCard>
     </>
@@ -26,27 +33,24 @@ function PortfolioCard(props) {
 const StdCard = styled.li`
   box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
   background-color: ${myWhite};
-  width: 47%;
-  border-radius: 12px;
+  width: 45%;
+  border-radius: ${borderPrime};
   overflow: hidden;
   aspect-ratio: 9/6;
   border: 1px solid ${secondary};
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
   :hover {
     border: 1px solid ${darkPrimary};
   }
   > section {
     text-align: center;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     height: 70%;
   }
 `;
 
-export default PortfolioCard;
+export default ProjectCard;

@@ -1,24 +1,24 @@
 import React from 'react';
-import Header from '../Components/Header/Header'
+import Me from '../Components/Me/Me'
 import { StdPageEl } from '../Components/Style';
 import AboutMe from '../Components/AboutMe/AboutMe';
-import Portfolio from '../Components/Portfolio/Portfolio';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Projects from '../Components/Projects/Projects';
 
-function Home() {
+function HomePage() {
   return (
     <>
       <StdPageEl>
-        <Header />
+        <Me />
       </StdPageEl>
       <StdPageEl>
         <AboutMe />
       </StdPageEl>
       <StdPageEl>
-        <Portfolio />
+        <Projects />
       </StdPageEl>
     </>
   );
 }
 
-export default Home;
+export default HomePage;

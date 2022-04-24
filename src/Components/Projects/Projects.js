@@ -8,9 +8,9 @@ import {
   secondary,
 } from '../Style';
 import { CardContent } from './CardContent';
-import PortfolioCard from './PortfolioCard';
+import ProjectCard from './ProjectCard';
 
-function Portfolio() {
+function Projects() {
   return (
     <StdPortfolio>
       <section>
@@ -25,7 +25,7 @@ function Portfolio() {
       </section>
       <ul>
         {CardContent.map((item) => (
-          <PortfolioCard
+          <ProjectCard
             title={item.title}
             desc={item.desc}
             webLink={item.webLink}
@@ -73,8 +73,8 @@ const StdPortfolio = styled.section`
     flex-direction: row;
     flex-wrap: wrap;
     list-style: none;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: -4rem;
   }
 `;
-export default Portfolio;
+export default Projects;

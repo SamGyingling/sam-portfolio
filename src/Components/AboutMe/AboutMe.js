@@ -65,6 +65,7 @@ const StdSection = styled.section`
   ul:first-child {
     max-width: 450px;
   }
+  
 `;
 
 export default AboutMe;

@@ -31,12 +31,18 @@ export const CardContent = [
       </svg>
     ),
     desc: 'Real-time online restaurants reservation platform ',
-    webLink: 'aaaaa',
+    webLink: 'https://www.proeats.com.au/',
   },
   {
     id: 'Bella',
     title: 'Bella',
-    desc: 'An e-commerce website for fine Jewelries ',
-    webLink: 'aaaaa',
+    desc: 'An e-commerce website for fine jewelries ',
+    webLink: 'https://samgyingling.github.io/web-project-v2/index.html',
+  },
+  {
+    id: 'ProEatsDemoVideo',
+    title: 'ProEats demo video',
+    desc: 'An demo video I made for ProEats',
+    webLink: 'https://samgyingling.github.io/web-project-v2/index.html',
   },
 ];
