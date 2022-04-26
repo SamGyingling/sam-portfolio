@@ -22,9 +22,8 @@ function AboutMe() {
           </p>
         </li>
         <li>
-          <StdLink to={'contact'}>
-            {' '}
-            More about me{' '}
+          <StdLink to={'about'}>
+            More about me
             <FontAwesomeIcon
               icon={faShare}
               style={{ marginLeft: '6px' }}
@@ -54,18 +53,27 @@ const StdSection = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    text-align: center;
+  }
   > ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    @media (max-width: 800px) {
+    padding: 0 1rem;
+  }
     > li {
       margin-bottom: 12px;
     }
   }
   ul:first-child {
     max-width: 450px;
+    @media (max-width: 800px) {
+      max-width: 100%;
   }
-  
+  }
 `;
 
 export default AboutMe;

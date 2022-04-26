@@ -17,9 +17,9 @@ function Nav() {
       <NavLink className="link" to={'about'}>
         <FontAwesomeIcon className="icon" icon={faUser} size="2x" />
       </NavLink>
-      <NavLink className="link" to={'my-work'}>
+      {/* <NavLink className="link" to={'my-work'}>
         <FontAwesomeIcon className="icon" icon={faBriefcase} size="2x" />
-      </NavLink>
+      </NavLink> */}
       <NavLink className="link" to={'contact'}>
         <FontAwesomeIcon className="icon" icon={faComment} size="2x" />
       </NavLink>

@@ -1,8 +1,8 @@
 export const CardContent = [
   {
-    id: 'ProEats',
+    id: 'ProEatsfdasf',
     title: (
-      <svg width="150" viewBox="0 0 290 70" class="css-1j8o68f">
+      <svg width="150" viewBox="0 0 290 70" >
         <defs id="SvgjsDefs1036"></defs>
         <g
           id="SvgjsG1037"
@@ -34,13 +34,13 @@ export const CardContent = [
     webLink: 'https://www.proeats.com.au/',
   },
   {
-    id: 'Bella',
+    id: 'Belladsafasdfasf',
     title: 'Bella',
     desc: 'An e-commerce website for fine jewelries ',
     webLink: 'https://samgyingling.github.io/web-project-v2/index.html',
   },
   {
-    id: 'ProEatsDemoVideo',
+    id: 'ProEatsDemoVideofadsf',
     title: 'ProEats demo video',
     desc: 'An demo video I made for ProEats',
     webLink: 'https://samgyingling.github.io/web-project-v2/index.html',

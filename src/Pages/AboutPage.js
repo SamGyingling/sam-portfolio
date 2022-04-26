@@ -9,7 +9,9 @@ function AboutPage() {
   return (
     <StdSection>
       <StdPageEl>
-        <img src="62550592.png" alt="me" />
+        <section>
+          <img src="62550592.png" alt="me" />
+        </section>
       </StdPageEl>
       <StdPageEl>
         <h2>SUMMARY</h2>
@@ -61,10 +63,25 @@ const StdSection = styled.section`
   > li {
     display: flex;
     flex-direction: column;
-    > img {
-      margin: auto;
-      align-items: center;
+    >p{
+      @media (max-width: 800px) {
+      padding:0 1rem;
+     
+    }
+    }
+    > section {
       width: 20%;
+      align-items: center;
+      overflow: hidden;
+      margin: auto;
+      display: flex;
+      background-color: #ffffff;
+      margin-bottom: -7rem;
+      aspect-ratio: 1/1;
+      img {
+        width: 60%;
+        margin: auto;
+      }
     }
     > h2 {
       margin-bottom: 2rem;

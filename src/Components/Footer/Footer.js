@@ -52,6 +52,17 @@ const StdFooter = styled.footer`
   padding: 2rem;
   border-radius: ${borderPrime};
   margin-top: -1px;
+  @media (max-width: 800px) {
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+  }
+  h3 {
+    @media (max-width: 800px) {
+      padding: 0 1rem;
+      text-align:center;
+    }
+  }
   > section {
     justify-content: space-evenly;
     width: 300px;

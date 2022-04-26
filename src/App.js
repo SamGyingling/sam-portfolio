@@ -1,10 +1,11 @@
 import './App.css';
-import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Routes, Route, BrowserRouter as Router, useLocation } from 'react-router-dom';
 import Layout from './Layout/Layout';
 import AboutPage from './Pages/AboutPage';
 import HomePage from './Pages/HomePage';
 import PortfolioPage from './Pages/PortfolioPage';
 import ContactPage from './Pages/ContactPage';
+import { useEffect } from 'react';
 
 function App() {
   return (

@@ -15,6 +15,7 @@ body{
 h1{
   font-size: 2.5rem;
   text-align: center;
+  padding:0 .5rem;
 }
 h2{
   font-size: 2rem;
@@ -45,4 +46,7 @@ button{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.text-cen{
+  text-align: center;
 }

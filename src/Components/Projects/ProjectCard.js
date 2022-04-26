@@ -16,7 +16,6 @@ import {
 
 function ProjectCard(props) {
   const { title, desc, webLink } = props;
-  const navigate = useNavigate();
   return (
     <>
       <StdCard className='flex-col'>
@@ -41,6 +40,12 @@ const StdCard = styled.li`
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  @media (max-width: 800px) {
+      width: 60%;
+    }
+  @media (max-width: 550px) {
+      width: 90%;
+    }
   :hover {
     border: 1px solid ${darkPrimary};
   }

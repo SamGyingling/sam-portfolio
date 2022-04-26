@@ -114,14 +114,16 @@ const StdUl = styled.ul`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
- 
+  justify-content: space-evenly;
+  @media (max-width: 800px) {
+    width: 95%;
+    align-self: center;
+  }
   > li {
     width: 30%;
     margin-bottom: 1rem;
     text-align: center;
     > p {
-    
     }
   }
 `;

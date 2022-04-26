@@ -4,18 +4,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShare } from '@fortawesome/free-solid-svg-icons';
 import { ButtondPrime, StdLink } from '../Style';
 import Scene from '../3D/Scene';
+import { useNavigate } from 'react-router-dom';
 
 function Me() {
+  const navigate = useNavigate();
   return (
     <StdMe>
-      <h1> Hello, I am Sam. A Full-Stack Developer.</h1>
+      <h1> Hello, I am Sam. A Full-Stack Developer</h1>
       <img src="62550592.png" alt="profile pic"></img>
       <section>
         <p>
           I am self-motivited, and I love what I do. <br />I am happy to welcome
           you on my website :-)
         </p>
-        <ButtondPrime className='btn'>
+        <ButtondPrime
+          className="btn"
+          onClick={() => {
+            navigate('contact');
+          }}
+        >
           Contact me
         </ButtondPrime>
       </section>
@@ -29,9 +36,12 @@ const StdMe = styled.section`
   justify-content: space-evenly;
   align-items: center;
   justify-content: center;
+  @media (max-width: 800px) {
+      width: 100%;
+    }
   > h1 {
     line-height: 1.278em;
-    font-weight:800;
+    font-weight: 800;
     margin: 24px 0px;
   }
   > img {
@@ -48,8 +58,11 @@ const StdMe = styled.section`
     p {
       text-align: center;
       margin: 24px 0px;
+      @media (max-width: 800px) {
+        padding: 0 .5rem;
+      }
     }
-    .btn{
+    .btn {
       width: fit-content;
       align-self: center;
     }
